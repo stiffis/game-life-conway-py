@@ -2,7 +2,7 @@ from colorama import Back, Fore, Style, init
 
 # Inicializa colorama
 init(autoreset=True)
-
+"""
 # Matriz 3x3 de ejemplo
 matriz = [
     [1, 2, 3],
@@ -17,7 +17,7 @@ def print_matrix(matrix):
             # Resaltar las celdas con fondo verde y texto blanco
             print(Back.GREEN + Fore.BLACK + f"  ", end="")  # Espacio adicional para separación
         print()# Nueva línea al final de cada fila
-
+"""
 # Llamar a la función para imprimir la matriz
 #print_matrix(matriz)
 x=int(input("Ingrese la cantidad de filas: "))
@@ -26,7 +26,10 @@ matrix = []
 for i in range(x):
     
     for j in range(y):
-        print(Back.BLUE + f"  ", end="|")
+        if j%2==0 or i%2==0:
+            print(Back.WHITE + f" W ", end="|")
+        else:
+            print(Back.BLACK + f" N ", end="|")
     print()
 
 
