@@ -33,7 +33,7 @@ def next_generation(grid):
         for col in range(cols):
             live_neighbors = count_neighbors(grid, row, col)
 
-            if grid[row, col] == 1:  # Alive cell
+            if grid[row, col] == 1 
                 if live_neighbors in [2, 3]:
                     new_grid[row, col] = 1
             else:  # Dead cell
@@ -43,11 +43,10 @@ def next_generation(grid):
     return new_grid
 
 if __name__ == "__main__":
-    # Define grid size
+
     rows, cols = 20, 40
     grid = create_grid(rows, cols)
 
-    # Run the simulation
     try:
         while True:
             display_grid(grid)
