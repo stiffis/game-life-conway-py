@@ -44,7 +44,7 @@ def next_generation(grid):
 
 if __name__ == "__main__":
 
-    rows, cols = 20, 40
+    rows, cols = 40, 40
     grid = create_grid(rows, cols)
 
     try:
