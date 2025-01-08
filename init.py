@@ -36,7 +36,7 @@ def next_generation(grid):
             if grid[row, col] == 1 :
                 if live_neighbors in [2, 3]:
                     new_grid[row, col] = 1
-            else:  # Dead cell
+            else:  
                 if live_neighbors == 3:
                     new_grid[row, col] = 1
 
@@ -51,6 +51,6 @@ if __name__ == "__main__":
         while True:
             display_grid(grid)
             grid = next_generation(grid)
-            time.sleep(0.3)
+            time.sleep(0.2)
     except KeyboardInterrupt:
         print("\nSimulation stopped.")
