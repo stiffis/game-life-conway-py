@@ -33,7 +33,7 @@ def next_generation(grid):
         for col in range(cols):
             live_neighbors = count_neighbors(grid, row, col)
 
-            if grid[row, col] == 1 
+            if grid[row, col] == 1 :
                 if live_neighbors in [2, 3]:
                     new_grid[row, col] = 1
             else:  # Dead cell
