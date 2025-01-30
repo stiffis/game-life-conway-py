@@ -58,7 +58,7 @@ Below is an example of the grid visualization:
 ## Project Structure
 ```
 conways-game-of-life/
-├── game_of_life.py  # Main Python script
+├── main.py  # Main Python script
 ├── README.md        # Project documentation
 ```
 
